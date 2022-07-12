@@ -87,7 +87,7 @@ table, tr, th, td {
     display:block;
     float: left;
     list-style-type: none;
-    font-size:100%;
+    font-size:130%;
     margin-top: 10px;
 }
 
@@ -246,8 +246,7 @@ table, tr, th, td {
     text-align: end;
 }
 .sziluett img{
-    width: 40%;
-    height: 40%;
+    width: 30%;
 }
 
 .kapcsolat_oszlop{
@@ -946,3 +945,39 @@ footer{
     background-color: #c64c09;
     border-color: #c64c09;
 }
+
+/*
+.fc .fc-col-header-cell-cushion {
+    display: inline-block;
+    padding: 2px 4px;
+    background-color: #c64c09;
+  } use Calendar instead of FullCalendar*/
+  
+  .fc-widget-header{
+    background-color:#c64c09;
+    color: #ffffff;
+}
+
+#calendar {
+    background-color: rgb(255, 201, 172)
+}
+
+.fc-today {
+    background: rgb(255, 201, 172) !important;
+} 
+
+#container{
+    margin-top: 50px;
+    background-color: rgb(255, 201, 172);
+    padding-top: 20px;
+}
+
+#container h2 {
+    color: #c64c09;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#container button {
+    margin-right: 20px;
+}
+  

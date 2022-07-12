@@ -6,6 +6,7 @@ use App\Http\Controllers\ChoirController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\FullCalendarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,8 @@ Route::post('/hirfolyam/{id}/delete', [PostController::class, 'destroy'])->name(
 Route::post('/hirfolyam/{id}/update', [PostController::class, 'update'])->name('updatePost');
 Route::get('/hirfolyam/{id}', [PostController::class, 'showOnePost']);
 Route::get('/hirfolyam/{page}', [PostController::class, 'pageForward']);
+
+Route::get('/calendar', [FullCalendarController::class, 'show'])->name('calendar');
 
 
 Route::get('/kapcsolat', function () {

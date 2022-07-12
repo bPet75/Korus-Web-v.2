@@ -17,9 +17,23 @@
 
     <script src="editor-sdk.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/10.0.0/classic/ckeditor.js"></script>
+
+    
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
+
+
     <title>Egri Érseki Fiúkórus</title>
 </head>
 <body>
+
     <div class="oldal">
         <div class="fejlec">
             <div class="logo_box">
@@ -39,7 +53,7 @@
                         <a href="{{url('/galeria')}}">GALÉRIA</a>
                     </li>
                     <li class="menupont">
-                        <a href="#">ESEMÉNYNAPTÁR</a>
+                        <a href="{{url('/calendar')}}">ESEMÉNYNAPTÁR</a>
                     </li>
                     <li class="menupont">
                         <a href="{{url('/kapcsolat')}}">KAPCSOLAT</a>
