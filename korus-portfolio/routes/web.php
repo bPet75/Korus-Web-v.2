@@ -24,21 +24,36 @@ use App\Http\Controllers\UserController;
 
 Auth::routes();
 
+Route::group(['middleware' => 'admin'], function() {
+    Route::get('/galeria/create', [GalleryController::class, 'createGallery'])->name('createGallery');
+    Route::post('/galeria/store', [GalleryController::class, 'storeGallery'])->name('storeGallery');
+    Route::get('/galeria/edit/{id}', [GalleryController::class, 'editGallery'])->name('editGallery');
+    Route::get('/galeria/delete/{id}', [GalleryController::class, 'deleteGallery'])->name('deleteGallery');
+    Route::post('/hirfolyam/letrehoz', [PostController::class, 'create'])->name('createPost');
+    Route::post('/hirfolyam/{id}/delete', [PostController::class, 'destroy'])->name('deletePost');
+    Route::post('/hirfolyam/{id}/update', [PostController::class, 'update'])->name('updatePost');
+    Route::get('/dash', function () { return view('pages/dashboard');});
+    Route::get('/post/new', function () {return view('pages/dash_config/createpost');});
+
+    Route::get('/tag/current/edit', [ChoirController::class, 'editCurrent'])->name('editCurrent');
+    Route::get('/tag/current/delete/{id}', [ChoirController::class, 'deleteCurrent'])->name('deleteCurrent');
+    Route::post('/tag/current/store', [ChoirController::class, 'storeCurrent'])->name('storeCurrent');
+
+    Route::get('/tag/old/edit', [ChoirController::class, 'editOld'])->name('editOld');
+    Route::get('/tag/old/delete/{id}', [ChoirController::class, 'deleteOld'])->name('deleteOld');
+    Route::post('/tag/old/store', [ChoirController::class, 'storeOld'])->name('storeOld');
+
+});
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [ChoirController::class, 'index']);
 Route::get('/rolunk', [ChoirController::class, 'index']);
 Route::get('/galeria', [GalleryController::class, 'listGallery'])->name('listGallery');
 Route::get('/galeria/show/{id}', [GalleryController::class, 'showGallery'])->name('showGallery');
-Route::get('/galeria/create', [GalleryController::class, 'createGallery'])->name('createGallery');
-Route::post('/galeria/store', [GalleryController::class, 'storeGallery'])->name('storeGallery');
-Route::get('/galeria/edit/{id}', [GalleryController::class, 'editGallery'])->name('editGallery');
-Route::get('/galeria/delete/{id}', [GalleryController::class, 'deleteGallery'])->name('deleteGallery');
 
 Route::get('/hirfolyam', [PostController::class, 'show'])->name('hirfolyam');
-Route::post('/hirfolyam/letrehoz', [PostController::class, 'create'])->name('createPost');
-Route::post('/hirfolyam/{id}/delete', [PostController::class, 'destroy'])->name('deletePost');
-Route::post('/hirfolyam/{id}/update', [PostController::class, 'update'])->name('updatePost');
 Route::get('/hirfolyam/{id}', [PostController::class, 'showOnePost']);
 Route::get('/hirfolyam/{page}', [PostController::class, 'pageForward']);
 
@@ -65,14 +80,6 @@ Route::get('/korus', function () {
 
 Route::get('/cke', function () {
     return view('cke_editor');
-});
-
-Route::get('/dash', function () {
-    return view('pages/dashboard');
-});
-
-Route::get('/post/new', function () {
-    return view('pages/dash_config/createpost');
 });
 
 /*Route::get('/login', function () {
