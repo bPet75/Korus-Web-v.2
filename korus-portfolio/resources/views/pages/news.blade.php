@@ -27,6 +27,7 @@
         <div class="d-flex justify-content-left">
             <div class="card d-flex mb-3 col-sm-10 col-lg-7 align-self-center">
                 <h5 class="card-title" style="margin: 10px">{{$item->title}}</h5>
+                <h8 class="card-title" style="margin: 10px">{{$item->updated_at}}</h5>
                 <img src="{{ asset('uploadfolder/images/'.$item->header_img) }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="read_more">
@@ -35,7 +36,7 @@
                     <a href="{{'/hirfolyam/'.$item->id}}" class="stretched-link"></a>
 
 
-                    
+
                 </div>
             </div>
         </div>
