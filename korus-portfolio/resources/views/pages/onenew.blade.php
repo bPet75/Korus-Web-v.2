@@ -16,7 +16,7 @@
     </div>
     @if(Auth::check() && (Auth::user()->user == 'admin'))
     <div id="post_admin_row">
-        <input type="button" id="post_edit" class="hir-button" value="Módosítás">
+        <input type="button" id="post_edit" class="hir-button" value="Módosítás" data-bs-toggle="collapse" data-bs-target="#createPost" aria-controls="createPost">
         <input type="button" id="post_delete" class="hir-button" value="Törlés">
     </div>
     @endif

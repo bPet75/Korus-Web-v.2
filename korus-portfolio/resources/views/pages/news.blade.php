@@ -41,17 +41,7 @@
         </div>
     </div>
 </div>
-<div class="d-flex justify-content-left" style="margin-bottom: 20px;">
-    <form action="{{url('/hirfolyam/'.$item->id.'/delete/')}}" method="POST">
-        @csrf
-        <div class="d-flex">
-            <div class="d-flex mx-2">
-                <input type="text" name="id" value="{{$item->id}}" class="d-none">
-                <button class="btn btn-danger align-self-center mb-1">Törlés</button>
-            </div>
-        </div>
-    </form>
-</div>
+
 <hr>
 
 @endforeach
