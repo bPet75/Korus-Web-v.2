@@ -631,7 +631,11 @@ footer{
     margin-left: 50px;
 }
 
-.hir-button a {
+#post_edit{
+    margin-left: 50px;
+}
+
+.hir-button a, button, input {
     text-decoration: none;
     color: #fff;
     line-height: 30px;
