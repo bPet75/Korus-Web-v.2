@@ -260,7 +260,7 @@ class DatabaseSeeder extends Seeder
             'code' => 'en',
             'name' => 'Angol',
         ]);
-        /*User::factory()->create([
+        User::factory()->create([
             'user' => 'admin',
             'is_admin' => '1',
             'password' => '21232f297a57a5a743894a0e4a801fc3',
@@ -270,7 +270,7 @@ class DatabaseSeeder extends Seeder
             'user' => 'tag',
             'is_admin' => '0',
             'password' => '21232f297a57a5a743894a0e4a801fc3',
-        ]);*/
+        ]);
 
 
 
