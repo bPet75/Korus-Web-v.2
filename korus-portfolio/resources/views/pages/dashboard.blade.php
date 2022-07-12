@@ -22,6 +22,12 @@
         <div>
             <a href="https://accounts.google.com/ServiceLogin?service=analytics&passive=true&nui=1&hl=hu&continue=https%3A%2F%2Fwww.google.com%2Fanalytics%2Fweb%2F%3Fhl%3Dhu&followup=https%3A%2F%2Fwww.google.com%2Fanalytics%2Fweb%2F%3Fhl%3Dhu" target="_blank">Megtekintési adatok</a>
         </div>
+        <div>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </div>
 	</div>
 
     <form action="{{url('/')}}" method="POST" id="tag_newpass_form">
