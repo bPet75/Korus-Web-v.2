@@ -115,7 +115,7 @@ table, tr, th, td {
     border-right: 11px solid transparent; content:"";
     border-top: 13px solid #c64c09;
     position: absolute;
-    bottom: -30px;
+    bottom: -27px;
     width: 0px;
     left: 50%;
     margin-left: -10px;
@@ -185,7 +185,7 @@ table, tr, th, td {
     padding-left:20px;
 }
 
-.szoveg_kb p { 
+.szoveg_kb p {
     padding: 0;
     margin: 0;
 }
@@ -630,7 +630,11 @@ footer{
     margin-left: 50px;
 }
 
-.hir-button a {
+#post_edit{
+    margin-left: 50px;
+}
+
+.hir-button a, button, input {
     text-decoration: none;
     color: #fff;
     line-height: 30px;
@@ -780,11 +784,11 @@ footer{
 }
 
 .iranyitopult_box {
-    background-image: url('../images/iranyito_feher.png');
+    background-image: url('/images/assets/iranyito_feher.png');
 }
 
 .logout_box {
-    background-image: url('../images/logout_feher.png');
+    background-image: url('/images/assets/logout_feher.png');
 }
 
 .newpost_block > div {

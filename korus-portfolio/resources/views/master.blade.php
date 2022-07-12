@@ -41,6 +41,23 @@
                     <a href="{{url('/')}}"><img src="{{URL::asset('/images/assets/logo_terra.png')}}" alt="logo" height="100"></a>
                 </div>
             </div>
+        @if(Auth::check())
+		<div id='user_box'>
+			@if(Auth::user()->user == 'admin')
+			<a href="{{url('dash')}}">
+				<div class="iranyitopult_box">
+				</div>
+			</a>
+			@endif
+            <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+            <div class="logout_box">
+				</div>
+			</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+		</div>
+		@endif
             <div class="menu">
                 <ul>
                     <li class="menupont">

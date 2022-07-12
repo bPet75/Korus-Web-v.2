@@ -14,21 +14,21 @@
             </div>
         </div>
     </div>
+    @if(Auth::check() && (Auth::user()->user == 'admin'))
     <div id="post_admin_row">
-        <div id="post_edit" class="hir-button"></div>
-        <div id="post_delete" class="hir-button"></div>
-    </div>
+        <input type="button" id="post_edit" class="hir-button" value="Módosítás" data-bs-toggle="collapse" data-bs-target="#createPost" aria-controls="createPost">
+        <form action="{{url('/hirfolyam/'.$data->id.'/delete/')}}" method="POST">
+            @csrf
+            <div>
+                <div>
+                    <input type="text" name="id" value="{{$data->id}}" class="d-none">
+                    <button id="post_delete" class="hir-button">Törlés</button>
+                </div>
+            </div>
+        </form>    </div>
+    @endif
 </div>
-
-<div class="d-flex justify-content-center">
-    <div class="d-flex">
-        <div class="d-flex mx-2">
-        <button class=" btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#createPost" aria-controls="createPost" style="margin: 20px;">
-            <span class="justify-content-center">Bejegyzés módosítása</span>
-        </button>
-        </div>
-    </div>
-</div>
+    
 
 <div class="d-flex justify-content-center">
   <div class="container-fluid ">

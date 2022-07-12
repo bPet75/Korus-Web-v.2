@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -12,7 +13,9 @@ class UserController extends Controller
     }
     public static function authenticate(Request $request){
 
-        if(Auth::attempt(['user' => $request->user, 'password' => $request->password])){
+        $user = DB::table('users')->where('user', $request->user)->where('password', $request->password)->first();
+
+        if($user != null){
             $request->session()->regenerateToken();
             return redirect("/dash");
         }
