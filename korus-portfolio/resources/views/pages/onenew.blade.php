@@ -14,10 +14,12 @@
             </div>
         </div>
     </div>
+    @if(Auth::check() && (Auth::user()->user == 'admin'))
     <div id="post_admin_row">
-        <div id="post_edit" class="hir-button"></div>
-        <div id="post_delete" class="hir-button"></div>
+        <input type="button" id="post_edit" class="hir-button" value="Módosítás">
+        <input type="button" id="post_delete" class="hir-button" value="Törlés">
     </div>
+    @endif
 </div>
 
 <div class="d-flex justify-content-center">
