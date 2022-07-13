@@ -228,21 +228,21 @@ class DatabaseSeeder extends Seeder
         ]);
         Post::factory()->create([
             'lang_id' => 1,
-            'header_img' => 'Karacsonyi_2014.jpg',
+            'header_img' => '1657271529-a.png',
             'title' => 'Adventi koncert',
             'read_more' => 'Rövid leírás',
             'content' => 'Adventi koncert leírása hosszan',
         ]);
         Post::factory()->create([
             'lang_id' => 1,
-            'header_img' => 'Karacsonyi_2014.jpg',
+            'header_img' => '1657271587-a.png',
             'title' => 'Videntes Stellam Kórus Hangverseny',
             'read_more' => 'Rövid leírás',
             'content' => 'Videntes Stellam Kórus Hangverseny leírása hosszan',
         ]);
         Post::factory()->create([
             'lang_id' => 1,
-            'header_img' => 'Karacsonyi_2014.jpg',
+            'header_img' => 'Videntes_Stellam_2014.jpg',
             'title' => 'Karácsonyi Koncert',
             'read_more' => 'Rövid leírás',
             'content' => 'Nagy &ouml;r&ouml;mnap a mai, hiszen k&oacute;rusunk &ouml;n&aacute;ll&oacute; Kar&aacute;csonyi Koncertj&eacute;vel kedvesked&uuml;nk zeneszerető k&ouml;z&ouml;ns&eacute;g&uuml;nknek. De ezen a sz&eacute;p esem&eacute;nyen k&iacute;v&uuml;l m&eacute;g egy nagy &ouml;r&ouml;m &eacute;rt ma benn&uuml;nket. Elindult az Egri &Eacute;rseki Fi&uacute;k&oacute;rus honlapja. H&aacute;l&aacute;s sz&iacute;vvel k&ouml;sz&ouml;nj&uuml;k a honlap elk&eacute;sz&iacute;t&eacute;s&eacute;t Tajti Tibornak (egyik k&oacute;rustagunk apuk&aacute;ja) &eacute;s csapat&aacute;nak.</p>\r\n\r\n<p>Szeretettel k&ouml;sz&ouml;nt&uuml;nk Mindenkit honlapunkon!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Boldog Kar&aacute;csonyt!',
