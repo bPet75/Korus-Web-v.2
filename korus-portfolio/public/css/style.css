@@ -638,7 +638,6 @@ footer{
     text-decoration: none;
     color: #fff;
     line-height: 30px;
-    display: block;
 }
 
 #update_images{
@@ -956,7 +955,7 @@ footer{
     padding: 2px 4px;
     background-color: #c64c09;
   } use Calendar instead of FullCalendar*/
-  
+
   .fc-widget-header{
     background-color:#c64c09;
     color: #ffffff;
@@ -968,7 +967,7 @@ footer{
 
 .fc-today {
     background: rgb(255, 201, 172) !important;
-} 
+}
 
 #container{
     margin-top: 50px;
@@ -984,4 +983,4 @@ footer{
 #container button {
     margin-right: 20px;
 }
-  
+
