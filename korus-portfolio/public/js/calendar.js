@@ -31,8 +31,12 @@ $(document).ready(function () {
         locale: 'hu',
         monthNames: ['Január,','Február,','Március,','Április,','Május,','Június,','Július,','Augusztus,','Szeptember,','Október,','November,','December,'],
         monthNamesShort: ['Jan','Feb','Márc','Ápr','Máj','Júni','Júli','Aug','Szept','Okt','Nov','Dec'],
-        dayNames: ['Hétfő','Kedd','Szerda','Csütörtök','Péntek','Szombat','Vasárnap'],
-        dayNamesShort: ['H','K','Sze','Cs','P','Szo','V'],
+        dayNames: ['Vasárnap', 'Hétfő','Kedd','Szerda','Csütörtök','Péntek','Szombat'],
+        dayNamesShort: ['V', 'H','K','Sze','Cs','P','Szo'],
+        firstDay: 1,
+        buttonText: {
+            today: 'mai nap'
+        },
         dayRender: function (date, cell) {
             cell.css("background-color", "white");
         },
