@@ -1,0 +1,15 @@
+Hírfolyamba facebook-hivatkozások, youtube hivatokzások beágyazhatósága.
+Tag kikapcsolása.
+Hírfolyam nyitóoldalnak.
+Galériában túl hosszú címekkel kapcsolatos bug megoldása.
+Bannerek croppolása.
+Váltakozó bannerek.
+Eseménynaptár rendberakása, az eseményekről bővített információk úgy, mint a hírfolyamnál.
+	Esemény:
+		Hely
+		Idő
+		Koncert címe
+Naptár csoportos linkelése (hogyan kell)
+Kórustagok volt kórustaggá nyilvánítása gomb
+Felületi áttervezés
+Galériában videó megjelenítésnél a sárga nyíl helyett maga a videó jelenjen meg
