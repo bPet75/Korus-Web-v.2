@@ -53,7 +53,7 @@ Route::group(['middleware' => 'admin'], function() {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', [ChoirController::class, 'index']);
+Route::get('/', [PostController::class, 'show']);
 Route::get('/rolunk', [ChoirController::class, 'index']);
 Route::get('/galeria', [GalleryController::class, 'listGallery'])->name('listGallery');
 Route::get('/galeria/show/{id}', [GalleryController::class, 'showGallery'])->name('showGallery');

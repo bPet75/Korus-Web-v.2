@@ -12,4 +12,4 @@ Eseménynaptár rendberakása, az eseményekről bővített információk úgy, 
 Naptár csoportos linkelése (hogyan kell)
 Kórustagok volt kórustaggá nyilvánítása gomb
 Felületi áttervezés
-Galériában videó megjelenítésnél a sárga nyíl helyett maga a videó jelenjen meg.
+Galériában videó megjelenítésnél a sárga nyíl helyett maga a videó jelenjen meg
