@@ -263,16 +263,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'user' => 'admin',
             'is_admin' => '1',
-            'password' => '21232f297a57a5a743894a0e4a801fc3',
+            'password' => '$2y$10$iQ14ye00XJU.q7Qvx61Ri.cyt/3jhrU8wzX0WijE4bn41cOj5Shg2',
         ]);
-
-        User::factory()->create([
-            'user' => 'tag',
-            'is_admin' => '0',
-            'password' => '21232f297a57a5a743894a0e4a801fc3',
-        ]);
-
-
-
     }
 }
