@@ -58,6 +58,28 @@
                 </form>
 		</div>
 		@endif
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 200%; letter-spacing: -8px;">≡≡≡</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li class="dropdown_menupont">
+                        <a href="{{url('/rolunk')}}">A KÓRUS</a>
+                    </li>
+                    <li class="dropdown_menupont">
+                        <a href="{{url('/hirfolyam')}}">HÍRFOLYAM</a>
+                    </li>
+                    <li class="dropdown_menupont">
+                        <a href="{{url('/galeria')}}">GALÉRIA</a>
+                    </li>
+                    <li class="dropdown_menupont">
+                        <a href="{{url('/calendar')}}">ESEMÉNYNAPTÁR</a>
+                    </li>
+                    <li class="dropdown_menupont">
+                        <a href="{{url('/kapcsolat')}}">KAPCSOLAT</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
             <div class="menu">
                 <ul>
                     <li class="menupont">
