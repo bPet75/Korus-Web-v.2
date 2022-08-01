@@ -542,10 +542,12 @@ footer{
     width: 530px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .login_forms{
-    float:left;
+    float:center;
     display:inline-block;
     padding-left: 10px;
     padding-right: 10px;
