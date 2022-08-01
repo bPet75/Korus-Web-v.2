@@ -462,6 +462,7 @@ footer{
     margin-top:10px;
     margin-bottom:0px;
     padding:0;
+    overflow: hidden;
 }
 .galeriak {
     float:left;
