@@ -18,12 +18,15 @@
  <div id='update_members'>
      @foreach($members as $mem)
      <div class='up_pic_div'>
- 		<div class="hir-button up_pic_del">
-             <a href="{{  url('tag/current/delete/'.$mem->id) }}" class="del_pic">TÖRLÉS</a>
- 		</div>
          <div class='up_pic_holder'>
              <img src="{{url('/uploadfolder/members/'.$mem->source)}}" class="up_pic_img">
          </div>
+         <div class="hir-button up_pic_del">
+            <a href="{{  url('tag/current/delete/'.$mem->id) }}" class="del_pic">TÖRLÉS</a>
+        </div>
+         <div class="hir-button up_pic_del">
+            <a href="{{  url('tag/current/transform/'.$mem->id) }}" class="del_pic">VOLT TAG</a>
+        </div>
      </div>
      @endforeach
  </div>

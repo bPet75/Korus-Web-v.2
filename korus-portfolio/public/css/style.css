@@ -628,7 +628,7 @@ footer{
     background-color: #c64c09;
     width: 200px;
     height: 30px;
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     cursor: pointer;
     float: left;
@@ -673,7 +673,7 @@ footer{
 }
 
 .up_pic_holder{
-    height:161px;
+    height:100px;
 }
 
 .up_pic_img{
@@ -878,7 +878,7 @@ footer{
 }
 
 .up_pic_del{
-    width: 110px;
+    width: 100px;
 }
 
 .up_pic_del a {
@@ -1000,12 +1000,12 @@ footer{
     font-size: 16px;
     border: none;
   }
-  
+
   .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -1014,18 +1014,18 @@ footer{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   .dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .dropdown-content a:hover {color: #4e1d03;}
-  
+
   .dropdown:hover .dropdown-content {display: block;}
-  
+
   .dropdown:hover .dropbtn {color: #4e1d03;}
 
 @media (min-width: 0px) {
@@ -1042,7 +1042,7 @@ footer{
     }
     .dropdown-content a {
         visibility: visible;
-        pointer-events: auto; 
+        pointer-events: auto;
     }
     .dropdown_menupont{
         visibility: visible;
@@ -1054,7 +1054,7 @@ footer{
     .menupont a
     {
         visibility: hidden;
-        pointer-events: none;        
+        pointer-events: none;
         /*text-decoration: none;*/
     }
     .menupont:hover:after{
@@ -1079,7 +1079,7 @@ footer{
     }
     .dropdown-content a {
         visibility: hidden;
-        pointer-events: none; 
+        pointer-events: none;
     }
     .dropdown-content{
         visibility: hidden;
@@ -1092,7 +1092,7 @@ footer{
     {
         visibility: visible;
         cursor: default;
-        pointer-events: auto;     
+        pointer-events: auto;
         /*text-decoration: none;*/
     }
     .menupont:hover:after{
