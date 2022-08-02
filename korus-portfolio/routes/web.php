@@ -25,12 +25,12 @@ use App\Http\Controllers\FullCalendarController;
 
 Auth::routes();
 
-Route::group(['middleware' => 'admin'], function() {
+Route::group(['middleware' => 'admin'], function () {
     Route::get('/galeria/create', [GalleryController::class, 'createGallery'])->name('createGallery');
     Route::post('/galeria/update/{id}', [GalleryController::class, 'updateGallery'])->name('updateGallery');
     Route::post('/galeria/store', [GalleryController::class, 'storeGallery'])->name('storeGallery');
     Route::get('/galeria/edit/{id}', [GalleryController::class, 'editGallery'])->name('editGallery');
-    Route::post('/galeria/picture/store', [GalleryController::class, 'storePicture'])->name('storePicture');//TODO
+    Route::post('/galeria/picture/store', [GalleryController::class, 'storePicture'])->name('storePicture'); //TODO
     Route::get('/galeria/picture/delete/{id}', [GalleryController::class, 'deletePicture'])->name('deletePicture');
     Route::post('/galeria/video/store', [GalleryController::class, 'storeVideo'])->name('storeVideo');
     Route::post('/galeria/video/delete/{id}', [GalleryController::class, 'deleteVideo'])->name('deleteVideo');
@@ -38,16 +38,21 @@ Route::group(['middleware' => 'admin'], function() {
     Route::post('/hirfolyam/letrehoz', [PostController::class, 'create'])->name('createPost');
     Route::post('/hirfolyam/{id}/delete', [PostController::class, 'destroy'])->name('deletePost');
     Route::post('/hirfolyam/{id}/update', [PostController::class, 'update'])->name('updatePost');
-    Route::get('/dash', function () { return view('pages/dashboard');});
-    Route::get('/post/new', function () {return view('pages/dash_config/createpost');});
+    Route::get('/dash', function () {
+        return view('pages/dashboard');
+    });
+    Route::get('/post/new', function () {
+        return view('pages/dash_config/createpost');
+    });
 
     Route::get('/tag/current/edit', [ChoirController::class, 'editCurrent'])->name('editCurrent');
     Route::get('/tag/current/delete/{id}', [ChoirController::class, 'deleteCurrent'])->name('deleteCurrent');
     Route::post('/tag/current/store', [ChoirController::class, 'storeCurrent'])->name('storeCurrent');
+    Route::get('/tag/current/transform/{id}', [ChoirController::class, 'transformCurrent'])->name('transformCurrent');
     Route::get('/tag/old/edit', [ChoirController::class, 'editOld'])->name('editOld');
     Route::get('/tag/old/delete/{id}', [ChoirController::class, 'deleteOld'])->name('deleteOld');
     Route::post('/tag/old/store', [ChoirController::class, 'storeOld'])->name('storeOld');
-
+    Route::get('/tag/old/transform/{id}', [ChoirController::class, 'transformOld'])->name('transformOld');
 });
 
 
