@@ -250,24 +250,28 @@ table, tr, th, td {
     margin-right: 10%;
 }
 
+.kapcsolat_oszlop h1{
+    font-weight: bold;
+}
+
 .kapcsolat_oszlop{
-    width: 390px;
+    width: 100%;
     padding: 0px;
     margin: 0px;
     margin-bottom: 25px;
 }
-
-.kapcsolat_div{
-    width: 180px;
+.kapcsolat_tablazat
+{
+    width: 100%;
     float: left;
-    padding: 0px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 35px;
     margin-bottom: 25px;
 }
 
-.kapcsolat_bal_aldiv{
-    width: 180px;
+.kapcsolat_bal_oszlop{
+    width: 25%;
     margin-bottom: 15px;
     font-size:15px;
     text-align: right;
@@ -277,9 +281,9 @@ table, tr, th, td {
     float: left;
 }
 
-.kapcsolat_jobb_aldiv{
-    width: 345px;
-    margin-left: 50px;
+.kapcsolat_jobb_oszlop{
+    width: 75%;
+    padding-left: 25px;
     margin-bottom: 15px;
     font-size:15px;
     text-align: left;
@@ -1024,8 +1028,11 @@ footer{
   
   .dropdown:hover .dropbtn {color: #4e1d03;}
 
-@media (min-width: 100px) {
-    
+@media (min-width: 0px) {
+    .dropdown-content ul li::marker {
+        color: #4e1d03;
+        content: "𝄞";
+      }
     .dropbtn{        
         visibility: visible;
         pointer-events: auto;
@@ -1059,9 +1066,13 @@ footer{
     .menu ul a {
         transition-duration: 0s;
     }
+    .kapcsolat_jobb_oszlop{
+        margin-left: 25%;
+        padding-left: 0;
+    }
   }
   
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 700px) {
     .dropbtn{
         visibility: hidden;
         pointer-events: none;
@@ -1095,5 +1106,9 @@ footer{
     }
     .menu ul a {
         transition-duration: 0.5s;
+    }
+    .kapcsolat_jobb_oszlop{
+        padding-left: 50px;
+        margin-left: 0;
     }
   }
